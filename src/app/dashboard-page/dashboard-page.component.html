@@ -1,0 +1,75 @@
+<!--<div class="text-center" style="padding: 50px;">
+  <h2>Protected Dashboard Page!</h2>
+  <div class="alert alert-danger">
+    Welcome to Your Dashboard Component
+  </div>
+</div>-->
+
+
+<form #loginform="ngForm" (ngSubmit)="trySearch(loginform.value)">
+  <div class="card mt-5" style="margin:auto;width: 600px;">
+      <div class="card-body">
+          <h5 class="card-title" style="float:initial">SEARCH FLIGHTS</h5>
+          <div class="form-group">
+            <label for="departuredate">Departure Date</label>
+            <input type="date" class="form-control" id="departuredate" placeholder="Departure Date" name="departuredate" ngModel>
+          </div>
+          <div class="form-group"> 
+            <label for="departurecity">Departure City</label>
+            <input type="text" class="form-control" id="departurecity" placeholder="eg. CCU, MAA, BOM, DEL, BLR, HYD" name="departurecity" ngModel>
+          </div>
+          <div class="form-group">
+            <label for="arrivalcity">Arrival City</label>
+            <input type="text" class="form-control" id="arrivalcity" placeholder="eg. CCU, MAA, BOM, DEL, BLR, HYD" name="arrivalcity" ngModel>
+          </div>
+          
+          <div class="form-group">
+            <label for="noofPassengers">No. of Passengers</label>
+            <input type="number" class="form-control" id="noofPassengers" placeholder="Total Number of Passengers" name="noofPassengers" ngModel>
+          </div>
+          <button type="submit" class="btn btn-primary">SEARCH</button>
+          &nbsp;
+          <button type="submit" class="btn btn-primary" (click)="this.loginform.reset()">RESET</button>
+      </div>
+  </div>
+</form>
+
+<style>
+  table,th,td{
+    border: 1px solid black;
+  }
+  
+  table{
+    border-collapse: collapse;
+    width:90%;
+  }
+  
+  th {
+    height: 50px;
+  }
+  </style>
+  
+  <div *ngIf="lstflightdetails">
+    <table class="content-table">
+      <tr class="active-row">
+        <th><b>Flight Id</b></th>
+        <th><b>Flight Number</b></th>
+        <th><b>Departure City</b></th>
+        <th><b>Departure Date</b></th>
+        <th><b>Arrival City</b></th>
+        <th><b>Amount</b></th>
+        <th><b>Available Seats</b></th>
+        <th><b>Action</b></th>
+      </tr>
+      <tr class="active-row" *ngFor="let com of lstflightdetails">
+        <td>{{com.flightid}}</td>
+        <td>{{com.flightnumber}}</td>
+        <td>{{com.departurecity}}</td>
+        <td>{{com.departuredate | date}}</td>
+        <td>{{com.arrivalcity}}</td>
+        <td>{{com.amount}}</td>
+        <td>{{com.noofPassengers}}</td>
+        <td><a class="btn btn-primary" routerLink="/book/{{com.flightid}}">BOOK</a></td>
+      </tr>
+    </table>
+  </div>

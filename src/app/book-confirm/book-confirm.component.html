@@ -1,0 +1,70 @@
+<form #loginform="ngForm" (ngSubmit)="confirmbook(loginform.value)">
+    <div class="card mt-5" style="margin:auto;width: 600px;">
+        <div class="card-body">
+            <h5 class="card-title" style="float:initial">BOOKING CONFIRMATION PAGE</h5>
+            <div class="form-group">
+              <label for="fullname">Name</label>
+              <input type="text" class="form-control" id="fullname" placeholder="Full Name" name="fullname" ngModel>
+            </div>
+            <div class="form-group"> 
+              <label for="emailid">Email Address</label>
+              <input type="text" class="form-control" id="emailid" placeholder="eg. abc@xyz.com" name="emailid" ngModel>
+            </div>
+            <div class="form-group">
+              <label for="phonenumber">Phone Number</label>
+              <input type="text" class="form-control" id="phonenumber" placeholder="eg. Phone Number" name="phonenumber" ngModel>
+            </div>
+            
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" class="form-control" id="city" placeholder="Current City" name="city" ngModel>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="Current State" name="state" ngModel>
+              </div>
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="Country" name="country" ngModel>
+              </div>
+              <div class="form-group">
+                <label for="noofPassengers">No. of Passengers</label>
+                <input type="text" class="form-control" id="noofPassengers" placeholder="No. of Passengers" name="noofPassengers" ngModel>
+              </div>
+            <div *ngFor="let com of lstflights">
+              <div class="form-group">
+                <label for="flightnumber">Flight Number</label>
+                <!-- <input type="text" class="form-control" id="flightnumber" placeholder="Flight Number" name="flightnumber" ngModel> -->
+                <input type="text" class="form-control" id ="flightnumber" name="flightnumber" [ngModel]="com.flightnumber" readonly>
+              </div>
+              <div class="form-group">
+                <label for="departurecity">Departure City</label>
+                <input type="text" class="form-control" id="departurecity" placeholder="Departure City" name="departurecity" [ngModel]="com.departurecity" readonly>
+              </div>
+              <div class="form-group">
+                <label for="departuredate">Departure Date</label>
+                <input type="text" class="form-control" id="departuredate" placeholder="Departure Date" name="departuredate" [ngModel]="com.departuredate" readonly>
+              </div>
+              <div class="form-group">
+                <label for="arrivalcity">Arrival City</label>
+                <input type="text" class="form-control" id="arrivalcity" placeholder="Arrival City" name="arrivalcity" [ngModel]="com.arrivalcity" readonly>
+              </div>
+              <div class="form-group">
+                <label for="amount">Total Amount</label>
+                <input type="text" class="form-control" id="amount" placeholder="Amount" name="amount" [ngModel]="com.amount" readonly>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">CONFIRM BOOKING</button>
+        </div>
+    </div>
+  </form>
+  
+  <!-- <div *ngFor="let com of lstflights">
+  <input type="text" name="flightnumber" [(ngModel)]="{{com.departurecity}}">
+</div>
+
+<form>
+  <input type="text" name="email" [ngModel]="UserData.email">
+</form>-->
+
+ 

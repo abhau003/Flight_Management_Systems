@@ -1,0 +1,65 @@
+[
+  {
+    "flightnumber": "IND2112",
+    "departurecity": "CCU",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "MAA",
+    "amount": "2000",
+    "noofPassengers": "20",
+    "flightid": 1
+  },
+  {
+    "flightnumber": "SPJ8765",
+    "departurecity": "CCU",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "BOM",
+    "amount": "4000",
+    "noofPassengers": "20",
+    "flightid": 2
+  },
+  {
+    "flightnumber": "IND2002",
+    "departurecity": "CCU",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "HYD",
+    "amount": "3000",
+    "noofPassengers": "30",
+    "flightid": 3
+  },
+  {
+    "flightnumber": "ETH7666",
+    "departurecity": "HYD",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "CCU",
+    "amount": "2400",
+    "noofPassengers": "30",
+    "flightid": 4
+  },
+  {
+    "flightnumber": "INA9888",
+    "departurecity": "BOM",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "MAA",
+    "amount": "4500",
+    "noofPassengers": "30",
+    "flightid": 5
+  },
+  {
+    "flightnumber": "AMA3455",
+    "departurecity": "CCU",
+    "departuredate": "2020-08-25",
+    "arrivalcity": "MAA",
+    "amount": "6500",
+    "noofPassengers": "30",
+    "flightid": 6
+  },
+  {
+    "flightnumber": "AMA3467",
+    "departurecity": "CCU",
+    "departuredate": "2020-08-26",
+    "amount": "5500",
+    "arrivalcity": "MAA",
+    "noofPassengers": "60",
+    "flightid": 7
+  }
+]

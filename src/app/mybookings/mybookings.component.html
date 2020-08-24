@@ -1,0 +1,23 @@
+<div *ngIf="lstbookingdetails">
+    <table class="content-table">
+      <tr class="active-row">
+        <th><b>PNR Number</b></th>
+        <th><b>Flight Number</b></th>
+        <th><b>Departure City</b></th>
+        <th><b>Departure Date</b></th>
+        <th><b>Arrival City</b></th>
+        <th><b>No. of Passengers</b></th>
+        <th><b>Amount Paid (Rs.)</b></th>
+
+      </tr>
+      <tr class="active-row" *ngFor="let com of lstbookingdetails">
+        <td>{{com.passengerpnr}}</td>
+        <td>{{com.passengerflightnumber}}</td>
+        <td>{{com.passengerdeparturecity}}</td>
+        <td>{{com.passengerdeparturedate | date}}</td>
+        <td>{{com.passengerarrivalcity}}</td>
+        <td>{{com.passengernoofPassengers}}</td>
+        <td>{{com.passengeramount}}</td>
+      </tr>
+    </table>
+  </div>
