@@ -5,6 +5,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "MAA",
     "amount": "2000",
+    "baseamount": "1800",
+    "taxes": "200",
     "noofPassengers": "20",
     "flightid": 1
   },
@@ -14,6 +16,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "BOM",
     "amount": "4000",
+    "baseamount": "3200",
+    "taxes": "800",
     "noofPassengers": "20",
     "flightid": 2
   },
@@ -23,6 +27,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "HYD",
     "amount": "3000",
+    "baseamount": "2400",
+    "taxes": "600",
     "noofPassengers": "30",
     "flightid": 3
   },
@@ -32,6 +38,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "CCU",
     "amount": "2400",
+    "baseamount": "2000",
+    "taxes": "400",
     "noofPassengers": "30",
     "flightid": 4
   },
@@ -41,6 +49,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "MAA",
     "amount": "4500",
+    "baseamount": "3000",
+    "taxes": "1500",
     "noofPassengers": "30",
     "flightid": 5
   },
@@ -50,6 +60,8 @@
     "departuredate": "2020-08-25",
     "arrivalcity": "MAA",
     "amount": "6500",
+    "baseamount": "4500",
+    "taxes": "2000",
     "noofPassengers": "30",
     "flightid": 6
   },
@@ -58,6 +70,8 @@
     "departurecity": "CCU",
     "departuredate": "2020-08-26",
     "amount": "5500",
+    "baseamount": "4500",
+    "taxes": "1000",
     "arrivalcity": "MAA",
     "noofPassengers": "60",
     "flightid": 7

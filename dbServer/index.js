@@ -125,7 +125,12 @@ const parseReqToBook = (req) => (
         passengerdeparturecity: req.body.departurecity,
         passengerarrivalcity: req.body.arrivalcity,
         passengeramount: req.body.amount*req.body.noofPassengers,
-        passengerdeparturedate: req.body.departuredate
+        passengerdeparturedate: req.body.departuredate,
+        passengerbaseamount: req.body.baseamount,
+        passengertaxes: req.body.taxes,
+        passengercardnumber: req.body.cardnumber,
+        passengercardexpirydate: req.body.cardexpirydate,
+        passengercardcvv: req.body.cardcvv
     }    
 );
 

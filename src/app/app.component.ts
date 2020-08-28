@@ -8,6 +8,12 @@ import { LoginService } from './login.service'
 })
 export class AppComponent {
   title = 'my-first-app';
+  dateMessage: string;
 
-  constructor(public loginService:LoginService){}
+  constructor(public loginService:LoginService){
+    setInterval(() => {
+      let currentDate = new Date();
+      this.dateMessage = currentDate.toDateString() + ' ' + currentDate.toLocaleTimeString() + ' ' +"IST";
+    },1000);
+  }
 }

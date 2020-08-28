@@ -8,8 +8,8 @@
 
 <form #loginform="ngForm" (ngSubmit)="trySearch(loginform.value)">
   <div class="card mt-5" style="margin:auto;width: 600px;">
-      <div class="card-body">
-          <h5 class="card-title" style="float:initial">SEARCH FLIGHTS</h5>
+      <div class="card-body ">
+          <h5 class="card-title" style="text-align: center;">SEARCH FLIGHTS</h5>
           <div class="form-group">
             <label for="departuredate">Departure Date</label>
             <input type="date" class="form-control" id="departuredate" placeholder="Departure Date" name="departuredate" ngModel>
@@ -73,3 +73,5 @@
       </tr>
     </table>
   </div>
+
+  <button type="button" style="margin-left:auto;margin-right:auto;display:block;margin-top:10%;margin-bottom:0%"></button>

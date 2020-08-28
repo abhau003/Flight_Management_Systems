@@ -1,0 +1,13 @@
+.card-title{
+    text-align: center; 
+}
+
+.footer-copyright{
+    text-decoration-color: firebrick;
+}
+
+.card-body{
+    width:100%;
+    border-style: solid;
+    background-color: transparent;
+}

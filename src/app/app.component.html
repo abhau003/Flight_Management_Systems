@@ -1,24 +1,25 @@
+<body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <!-- <a class="navbar-brand" href="#">WELCOME TO SPICE JET AIRLINES</a> -->
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span> -->
-    <!-- </button> -->
-
+   <!-- <a class="navbar-brand" href="#">WELCOME TO SPICE JET AIRLINES</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
   
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
           <!-- <a class="navbar-brand" *ngIf="!loginService.loggedIn()" routerLink="/login" routerLinkActive="active">Home</a>
-          <a class="navbar-brand" *ngIf="!loginService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a> -->
-          <a class="navbar-brand" *ngIf="!loginService.loggedIn()" routerLink="/login" routerLinkActive="active">WELCOME TO SPICE JET AIRLINES</a>
+          <a class="navbar-brand" *ngIf="!loginService.loggedIn()" routerLink="/login" routerLinkActive="active">Login</a> -->     
+          <a class="navbar-brand topnav-centered" *ngIf="!loginService.loggedIn()" routerLink="/login" routerLinkActive="active">WELCOME TO SPICE JET AIRLINES</a>
+          <p class="navbar-brand topnav-right" *ngIf="!loginService.loggedIn()">{{dateMessage}}</p> 
           <a class="navbar-brand" *ngIf="loginService.loggedIn()" routerLink="/dashboard-page" routerLinkActive="active">Search Flights</a>
           <a class="navbar-brand" style="cursor:pointer" *ngIf="loginService.loggedIn()" routerLink="/mybookings" routerLinkActive="active">My Bookings</a>
-          <a class="navbar-brand" style="cursor:pointer;" *ngIf="loginService.loggedIn()" (click)="loginService.logoutUser()">Logout</a>
-      
+          <a class="navbar-brand topnav-right" style="cursor:pointer;" *ngIf="loginService.loggedIn()" (click)="loginService.logoutUser()">Logout</a>
         </ul>
     </div>
   </nav>    
-  <div class="container">
+  <!-- <div class="container">
     <router-outlet></router-outlet>            
-  </div>
-
-  <div style="background-image: url('flight_image.jpg');">
+  </div> -->
+  <router-outlet></router-outlet>  
+</body>
+ 
